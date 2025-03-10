@@ -7,7 +7,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/600.css";
 function Header() {
   return (
-    <header className=" flex min-h-[68px] justify-center text-sm transition-all shadow-sm ">
+    <header className=" flex min-h-[68px] justify-center text-sm transition-all shadow-lg  ">
       <div className="flex   items-center max-w-[1152px] w-full ">
         <div className="flex items-center ">
           <a href="#">
@@ -69,6 +69,7 @@ function Header() {
                 </ul>
               </div>
             </div>
+
 
             {/*  */}
             <div className="relative group inline-block my-auto">
