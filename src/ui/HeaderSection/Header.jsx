@@ -2,20 +2,19 @@ import React from "react";
 import TechCareerLogo from "../../assets/svg/techcareerlogo";
 import SearchIcon from "../../assets/svg/searchicon";
 import cn from "classnames";
-import { Input } from "@mui/material";
 
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/600.css";
 function Header() {
   return (
-    <header className="mx-[112.5px] px-8 flex w-full min-h-[68px] text-sm transition-all">
-      <div className="flex items-center max-w-[1152px]">
+    <header className=" flex min-h-[68px] justify-center text-sm transition-all">
+      <div className="flex   items-center max-w-[1152px] w-full ">
         <div className="flex items-center ">
           <a href="#">
             <TechCareerLogo className="cursor-pointer" />
           </a>
         </div>
-        <div className="flex ml-8 items-center justify-between grow-1 w-full ">
+        <div className="flex ml-6 items-center grow justify-between">
           <div className="flex gap-6 ">
             <div className="relative">
               <div>
@@ -46,7 +45,8 @@ function Header() {
               <a href="#">Komünite</a>
             </button>
           </div>
-          <button className="px-4 py-[6px] h-9  rounded-sm bg-giris hover:bg-giris-hover text-white cursor-pointer">
+
+          <button className="px-4 py-[6px] h-9   rounded-sm bg-giris  hover:bg-giris-hover text-white cursor-pointer">
             Giriş / Üye Ol
           </button>
         </div>
