@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Autocomplete, TextField } from "@mui/material";
+import React from "react";
+import Header from "./ui/HeaderSection/Header";
+import CTA from "./ui/CTASection/CTA";
+import HomePageEvent from "./ui/HomepageEventSection/HomePageEvent";
+import Event from "./ui/EventSection/Event";
+import Jobs from "./ui/JobsSection/Jobs";
+import Courses from "./ui/CoursesSection/Courses";
+import HomePageSlider from "./ui/HomePageSlider/HomePageSlider";
+import HomePageOtherSection from "./ui/HomePageOtherSection/HomePageOtherSection";
+import Testimonials from "./ui/Testimonials/Testimonials";
+import BiziKatilimcilardanDinle from "./ui/BiziKatılımcılarDinle/BiziKatilimcilardanDinle";
+import IsverenMisin from "./ui/IsverenMisin/IsverenMisin"
+import Footer from "./ui/Footer/Footer";
+// Supports weights 100-900
+// import '@fontsource/roboto/300.css';
+// import '@fontsource/roboto/400.css';
+// import '@fontsource/roboto/500.css';
+// import '@fontsource/roboto/700.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      {/* <div className="text-5xl font-[Roboto]">App</div> */}
+      <div className="font-[Roboto]"  >
+        <Header />
+        <CTA />
+        <HomePageEvent />
+        <Event />
+        <Jobs />
+        <Courses />
+        <HomePageSlider />
+        <HomePageOtherSection />
+        <Testimonials />
+        <BiziKatilimcilardanDinle />
+        <IsverenMisin />
+        <Footer />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
