@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./ui/HeaderSection/Header";
 import CTA from "./ui/CTASection/CTA";
 import HomePageEvent from "./ui/HomepageEventSection/HomePageEvent";
-import Event from "./ui/EventSection/Event";
+
 import Jobs from "./ui/JobsSection/Jobs";
 import Courses from "./ui/CoursesSection/Courses";
 import HomePageSlider from "./ui/HomePageSlider/HomePageSlider";
@@ -25,7 +25,6 @@ function App() {
         <Header />
         <CTA />
         <HomePageEvent />
-        <Event />
         <Jobs />
         <Courses />
         <HomePageSlider />

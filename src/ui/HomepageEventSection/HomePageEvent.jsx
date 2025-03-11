@@ -1,5 +1,6 @@
 import React, { use, useState } from "react";
 import HemenBasvurForward from "../../assets/svg/hemen_basvur";
+import BootcampCards from "../../components/BootcampCards";
 function HomePageEvent() {
   const buttons = [
     {
@@ -22,8 +23,8 @@ function HomePageEvent() {
   const [selected, setSelected] = useState(buttons[0].label);
 
   return (
-    <div className="py-12">
-      <div className="mx-auto px-6 flex flex-col gap-8 max-w-[1200px]">
+    <div className="py-12 mb-24">
+      <div className="mx-auto px-6 flex flex-col gap-8 max-w-[1200px] mb-24">
         <div>
           <h1 className="text-4xl font-medium">Etkinliklerimiz</h1>
         </div>
@@ -53,9 +54,9 @@ function HomePageEvent() {
           <div className="flex justify-center items-center gap-1">
             {" "}
             <a href="#" className=" flex items-center  text-giris  hover:underline  text-[15px] transition">
-              Hemen Başvur{" "}
+              Hemen Başvur
             </a>
-            <span>
+            <span className="">
               <HemenBasvurForward className="h-[20px] w-[20px] fill-giris" />
             </span>
           </div>
@@ -77,6 +78,20 @@ function HomePageEvent() {
             </button>
           </div>
         </div> */}
+      </div>
+      <div className="mx-auto px-6 flex flex-col gap-6 max-w-[1200px]">
+        <div>
+          <h2 className="text-2xl text-center">Başvuruya Açık Etkinlikler</h2>
+        </div>
+        {/* <div className="flex gap-4 w-full">
+          <div className="">
+
+          </div>
+          <div></div>
+          <div></div>
+          
+        </div> */}
+        <BootcampCards />
       </div>
     </div>
   );
