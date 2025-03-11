@@ -7,10 +7,9 @@ import Event from "./ui/EventSection/Event";
 import Jobs from "./ui/JobsSection/Jobs";
 import Courses from "./ui/CoursesSection/Courses";
 import HomePageSlider from "./ui/HomePageSlider/HomePageSlider";
-import HomePageOtherSection from "./ui/HomePageOtherSection/HomePageOtherSection";
 import Testimonials from "./ui/Testimonials/Testimonials";
 import BiziKatilimcilardanDinle from "./ui/BiziKatılımcılarDinle/BiziKatilimcilardanDinle";
-import IsverenMisin from "./ui/IsverenMisin/IsverenMisin"
+import IsverenMisin from "./ui/IsverenMisin/IsverenMisin";
 import Footer from "./ui/Footer/Footer";
 // Supports weights 100-900
 // import '@fontsource/roboto/300.css';
@@ -22,7 +21,7 @@ function App() {
   return (
     <>
       {/* <div className="text-5xl font-[Roboto]">App</div> */}
-      <div className="font-[Roboto]"  >
+      <div className="font-[Roboto]">
         <Header />
         <CTA />
         <HomePageEvent />
@@ -30,7 +29,6 @@ function App() {
         <Jobs />
         <Courses />
         <HomePageSlider />
-        <HomePageOtherSection />
         <Testimonials />
         <BiziKatilimcilardanDinle />
         <IsverenMisin />

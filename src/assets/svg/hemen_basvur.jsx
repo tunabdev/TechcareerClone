@@ -1,9 +1,9 @@
 import * as React from "react";
 
-const SvgIcon = (props) => (
+const SvgIcon = ({className}) => (
   <svg
     ariaHidden="true"
-    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q7mezt"
+    className={className}
     data-testid="ArrowForwardIcon"
     viewBox="0 0 24 24"
   >

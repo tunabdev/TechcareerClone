@@ -11,7 +11,7 @@ function Header() {
       <div className="flex   items-center max-w-[1152px] w-full ">
         <div className="flex items-center ">
           <a href="#">
-            <TechCareerLogo className="cursor-pointer" />
+            <TechCareerLogo className="cursor-pointer " />
           </a>
         </div>
         <div className="flex ml-6 items-center grow font-normal justify-between">
@@ -24,7 +24,7 @@ function Header() {
                    "
                 ></input>
 
-                <SearchIcon className="absolute top-[6px] left-4 h-6  " />
+                <SearchIcon className="absolute top-[6px] left-4 h-6 fill-zinc-400  " />
               </div>
             </div>
             <div className="relative group inline-block my-auto">
@@ -70,7 +70,6 @@ function Header() {
               </div>
             </div>
 
-
             {/*  */}
             <div className="relative group inline-block my-auto">
               {/* Buton */}
@@ -82,7 +81,7 @@ function Header() {
               <div className="absolute pl-4 py-4 pr-6 left-1/2 text-xs -translate-x-1/2 mt-2 w-max bg-gray-900 text-white rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
                 Yeni işinle sen de hayalindeki kariyere kavuşabilirsin!
                 <div>Senin için topladığımız iş fırsatlarını şimdi incele!</div>
-                {/* Tooltip Üçgeni */}
+                {/* Tooltip Arrow */}
                 <div className="absolute left-1/2 -translate-x-1/2 -top-1 w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-b-4 border-b-gray-900"></div>
               </div>
             </div>
