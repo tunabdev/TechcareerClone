@@ -78,7 +78,7 @@ const HomePageSlider = () => {
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index} className="p-2">
-            <a href="#">
+            <a href="#" className="focus:outline-none focus:ring-0">
               <img
                 src={img}
                 alt={`Slide ${index + 1}`}
