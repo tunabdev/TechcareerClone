@@ -42,12 +42,12 @@ export default function QuizzesCards() {
         // Quizzes Card
         <div
           key={index}
-          className="border border-zinc-200 hover:border-zinc-950 rounded-lg p-6 bg-white flex flex-col items-center text-center 
+          className="border border-zinc-200 hover:border-zinc-950 rounded-lg p-6 bg-white flex flex-col items-center  
           space-y-4 cursor-pointer justify-between"
         >
           <div>
             <img src={test.logo} alt={test.title} className=" object-contain" />
-            <h3 className="text-[20px] font-medium">{test.title}</h3>
+            <h3 className="text-lg font-medium">{test.title}</h3>
             <p className="text-sm text-zinc-950">{test.description}</p>
           </div>
 
