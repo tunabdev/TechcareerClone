@@ -4,7 +4,7 @@ import JobCards from "../../components/JobsCards";
 function Jobs() {
   return (
     <div className="bg-gray-50 py-12 ">
-      <div className="mx-auto px-6 flex flex-col gap-8 max-w-[1200px] ">
+      <div className="mx-auto px-6 flex flex-col gap-4 max-w-[1200px] ">
         <div className="flex flex-col gap-2">
           <div>
             <h1 className="text-4xl font-medium">İş İlanlarımız</h1>

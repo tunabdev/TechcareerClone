@@ -10,10 +10,7 @@ function BootcampCards() {
       description: "Teknoloji ile Dünyayı Değiştir!",
       tags: ["Hackathon", "İş Birliği"],
       deadline: "13.03.2025",
-      //bring image from asset folder etkinlik1.jpg and use it image property import pls
       image: Etk1,
-
-      // image: "/detec25.jpg",
     },
     {
       title: "SwiftCraft: iOS Development Bootcamp",
@@ -32,7 +29,7 @@ function BootcampCards() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
       {bootcamps.map((bootcamp, index) => (
         <div
           key={index}
@@ -67,7 +64,9 @@ function BootcampCards() {
           <div className="p-4 border-t border-zinc-200 flex justify-between items-center max-h-[63px]">
             <span className="text-xs text-zinc-400">
               SON BAŞVURU: <br />
-              <strong className="text-sm text-zinc-950">{bootcamp.deadline}</strong>
+              <strong className="text-sm text-zinc-950">
+                {bootcamp.deadline}
+              </strong>
             </span>
             <button className="bg-giris cursor-pointer font-medium hover:bg-giris-hover text-xs text-white px-4 py-2 rounded-sm w-[153px] h-[30px] text-center">
               Başvur

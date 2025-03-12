@@ -11,6 +11,7 @@ import Testimonials from "./ui/Testimonials/Testimonials";
 import BiziKatilimcilardanDinle from "./ui/BiziKatılımcılarDinle/BiziKatilimcilardanDinle";
 import IsverenMisin from "./ui/IsverenMisin/IsverenMisin";
 import Footer from "./ui/Footer/Footer";
+import Quizzes from "./ui/QuizzesSection/Quizzes";
 // Supports weights 100-900
 // import '@fontsource/roboto/300.css';
 // import '@fontsource/roboto/400.css';
@@ -27,6 +28,7 @@ function App() {
         <HomePageEvent />
         <Jobs />
         <Courses />
+        <Quizzes />
         <HomePageSlider />
         <Testimonials />
         <BiziKatilimcilardanDinle />
