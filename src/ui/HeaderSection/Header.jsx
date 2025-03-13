@@ -5,6 +5,7 @@ import cn from "classnames";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/600.css";
+import { NavLink } from "react-router";
 function Header() {
   return (
     <header className=" flex min-h-[68px] justify-center text-sm transition-all shadow-lg  ">
@@ -90,16 +91,16 @@ function Header() {
               <a href="#">Eğitimler</a>
             </button>
             <button className="font-medium hover:text-link-hover cursor-pointer">
-              <a href="#">
+              <NavLink to="/quizzes">
                 <span className="text-link-hover">●</span> Testler
-              </a>
+              </NavLink>
             </button>
             <div className="relative group inline-block my-auto">
               {" "}
               <button className="font-medium hover:text-link-hover cursor-pointer ">
-                <a href="#">Etkinlikler</a>
+                <a href="#">Komunite</a>
               </button>
-              <div className="absolute left-0 mt-2 min-w-[150px] bg-white border border-gray-200 border-t-[4px] border-t-link-hover rounded-md shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div className="absolute z-100 left-0 mt-2 min-w-[150px] bg-white border border-gray-200 border-t-[4px] border-t-link-hover rounded-md shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <ul className="py-2">
                   <li>
                     <a

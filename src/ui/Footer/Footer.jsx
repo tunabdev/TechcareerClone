@@ -57,7 +57,7 @@ export default function Footer() {
     <div className="bg-gray-100">
       <div className="mx-auto px- flex flex-col gap-4 max-w-[1200px]">
         <footer className=" py-10 ">
-          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5">
+          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4">
             {sections.map((section, index) => (
               <div key={index} className="text-sm">
                 <h3 className="text-gray-400 mb-3">{section.title}</h3>
