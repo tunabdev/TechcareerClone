@@ -12,7 +12,7 @@ import BiziKatilimcilardanDinle from "./ui/BiziKatılımcılarDinle/BiziKatilimc
 import IsverenMisin from "./ui/IsverenMisin/IsverenMisin";
 import Footer from "./ui/Footer/Footer";
 import Quizzes from "./ui/QuizzesSection/Quizzes";
-import HomePageOtherSection from "./ui/RefAnimationSection/RefAnimationSection";
+import HomePageOtherSection from "./ui/HomePageOtherSection/HomePageOtherSection";
 import RefAnimationSection from "./ui/RefAnimationSection/RefAnimationSection";
 // Supports weights 100-900
 // import '@fontsource/roboto/300.css';
@@ -32,7 +32,7 @@ function App() {
         <Courses />
         <Quizzes />
         <HomePageSlider />
-        <HomePageOtherSection />
+        <HomePageOtherSection/>
         <RefSection />
         <RefAnimationSection />
         <BiziKatilimcilardanDinle />

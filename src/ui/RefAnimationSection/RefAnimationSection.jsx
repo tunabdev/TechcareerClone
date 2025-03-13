@@ -47,26 +47,38 @@ export default function LogoGrid() {
   }, []);
 
   return (
-    <div className="bg-white py-12  ">
-      <div className="mx-auto flex flex-col max-w-[1200px] overflow-hidden ">
-        <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 p-6 ">
-          {/* {visibleLogos.map((logo, index) => (
-            <AnimatePresence key={index} mode="wait">
-              <motion.img
-                src={logo}
-                alt={`Logo ${index + 1}`}
-                className="h-[100px] object-contain"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1}}
-              />
-            </AnimatePresence>
-          ))} */}
+    // <div className="bg-white py-12">
+    //   <div className="mx-auto flex flex-col max-w-[1200px] overflow-hidden ">
+    //     <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 p-6 ">
+    //       {visibleLogos.map((logo, index) => (
+    //         <div
+    //           key={index}
+    //           className="h-[100px] flex items-center justify-center"
+    //         >
+    //           <AnimatePresence mode="wait">
+    //             <motion.img
+    //               key={logo}
+    //               src={logo}
+    //               alt="logo"
+    //               className="w-full h-full object-contain"
+    //               initial={{ opacity: 0 }}
+    //               animate={{ opacity: 1 }}
+    //               exit={{ opacity: 0 }}
+    //               transition={{ duration: 1 }}
+    //             />
+    //           </AnimatePresence>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="bg-white py-12 overflow-hidden">
+      <div className="mx-auto flex flex-col max-w-[1200px] px-4 sm:px-6">
+        <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-4 md:gap-6 p-4">
           {visibleLogos.map((logo, index) => (
             <div
               key={index}
-              className="h-[100px] flex items-center justify-center"
+              className="h-[80px] md:h-[100px] flex items-center justify-center overflow-hidden"
             >
               <AnimatePresence mode="wait">
                 <motion.img

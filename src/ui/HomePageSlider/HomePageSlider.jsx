@@ -75,7 +75,7 @@ const HomePageSlider = () => {
   };
 
   return (
-    <div className="max-w-full w-full flex flex-col bg-carousel-bg py-18">
+    <div className="max-w-full w-full flex flex-col bg-carousel-bg py-18 overflow-hidden">
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index} className="p-2">
