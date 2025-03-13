@@ -1,12 +1,12 @@
 import * as React from "react";
 
-const SvgIcon = (props) => (
+const SvgIcon = ({className}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="36"
     height="24"
     fill="none"
-    style={{ position: "absolute", left: "0" }}
+    className={className}
   >
     <path
       fill="#00C26D"
