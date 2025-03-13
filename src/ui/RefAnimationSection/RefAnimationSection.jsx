@@ -72,7 +72,7 @@ export default function LogoGrid() {
     //     </div>
     //   </div>
     // </div>
-    <div className="bg-white py-12 overflow-hidden">
+    <div className="bg-white  overflow-hidden">
       <div className="mx-auto flex flex-col max-w-[1200px] px-4 sm:px-6">
         <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-4 md:gap-6 p-4">
           {visibleLogos.map((logo, index) => (

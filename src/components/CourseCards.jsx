@@ -61,11 +61,12 @@ export default function CourseCards() {
             <div className="flex flex-wrap gap-2 mt-3 mb-6">
               {course.tags.map((tag, idx) => (
                 <span
-                  key={idx}
-                  className="bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full"
-                >
-                  {tag}
-                </span>
+                key={idx}
+                className="px-3 py-1 bg-zinc-100 text-gray-700 border-1 text-[13px] rounded-full "
+              >
+                {tag}
+              </span>
+               
               ))}
             </div>
           </div>

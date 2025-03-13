@@ -1,9 +1,9 @@
 import * as React from "react";
 
-const SvgIcon = (props) => (
+const SvgIcon = ({ className }) => (
   <svg
     ariaHidden="true"
-    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q7mezt"
+    className={className}
     color="#878787"
     data-test="leadbar-email-icon"
     data-testid="EmailIcon"
