@@ -3,8 +3,8 @@ import EmailLogo from "../../assets/svg/isverenmisin/email";
 export default function EmployerContact() {
   return (
     <div className="bg-gray-800">
-      <div className="mx-auto px-6 flex flex-col gap-4 max-w-[1200px] ">
-        <div className=" text-white py-6 flex flex-col md:flex-row items-center justify-between">
+      <div className="mx-auto px- flex flex-col gap-4 max-w-[1200px] ">
+        <div className=" text-white py-8 flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
             <h2 className="text-2xl font-medium">İşveren misin?</h2>
             <p className="text-lg font-light">
@@ -28,9 +28,6 @@ export default function EmployerContact() {
                 </button>
               </a>
             </div>
-            {/* <button className="ml-2 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
-              Gönder
-            </button> */}
           </div>
         </div>
       </div>
