@@ -256,3 +256,10 @@
   --color-link-hover: #00C26D;
   --color-carousel-bg: #293349;
 }
+
+slick-slide {
+  margin: 0 10px; /* Sağ ve sol boşluk */
+}
+.slick-list {
+  margin: 0 -10px; /* Kaydırma alanını dengele */
+}

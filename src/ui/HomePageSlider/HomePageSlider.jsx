@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 
 //import slick_1
-import Slick1 from "../../carousel/slick_1.jpg";
-import Slick2 from "../../carousel/slick_2.jpg";
-import Slick3 from "../../carousel/slick_3.jpg";
-import Slick4 from "../../carousel/slick_4.jpg";
-import Slick5 from "../../carousel/slick_5.jpg";
-import Slick6 from "../../carousel/slick_6.jpg";
-import Slick7 from "../../carousel/slick_7.jpg";
-import Slick8 from "../../carousel/slick_8.jpg";
-import Slick9 from "../../carousel/slick_9.jpg";
-import Slick10 from "../../carousel/slick_10.jpg";
+import Slick1 from "../../assets/carousel/slick_1.jpg";
+import Slick2 from "../../assets/carousel/slick_2.jpg";
+import Slick3 from "../../assets/carousel/slick_3.jpg";
+import Slick4 from "../../assets/carousel/slick_4.jpg";
+import Slick5 from "../../assets/carousel/slick_5.jpg";
+import Slick6 from "../../assets/carousel/slick_6.jpg";
+import Slick7 from "../../assets/carousel/slick_7.jpg";
+import Slick8 from "../../assets/carousel/slick_8.jpg";
+import Slick9 from "../../assets/carousel/slick_9.jpg";
+import Slick10 from "../../assets/carousel/slick_10.jpg";
+
 
 const images = [
   Slick1,
