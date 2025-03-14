@@ -1,6 +1,8 @@
+import { useMediaQuery } from "react-responsive";
 import EmailLogo from "../../assets/svg/isverenmisin/email";
 
-export default function EmployerContact() {
+export default function IsverenMisin() {
+  const isSmallScreen = useMediaQuery({ maxWidth: 626 });
   return (
     <div className="bg-gray-800">
       <div className="mx-auto px-6  flex flex-col gap-4 max-w-[1200px] ">
@@ -20,7 +22,7 @@ export default function EmployerContact() {
               <input
                 type="email"
                 placeholder="E-mail"
-                className="w-full min-w-[565px] bg-white h-14 md:w-64 pl-10 pr-4 py-2 text-gray-900 rounded-md focus:outline-none focus:ring-0"
+                className={`w-full bg-white h-14 md:w-64 pl-10 pr-4 py-2 text-gray-900 rounded-md focus:outline-none focus:ring-0 ${isSmallScreen ? "min-w-[339px]" : "min-w-[565px]"}`}
               />
               <a href="#">
                 <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-giris hover:bg-giris-hover text-white font-medium w-24 h-10 rounded-md cursor-pointer">
