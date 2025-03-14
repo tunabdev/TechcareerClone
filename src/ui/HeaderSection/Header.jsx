@@ -11,9 +11,9 @@ function Header() {
     <header className=" flex min-h-[68px] justify-center text-sm transition-all shadow-lg  ">
       <div className="flex   items-center max-w-[1152px] w-full ">
         <div className="flex items-center ">
-          <a href="#">
+          <NavLink to={"/"} >
             <TechCareerLogo className="cursor-pointer " />
-          </a>
+          </NavLink>
         </div>
         <div className="flex ml-6 items-center grow font-normal justify-between">
           <div className="flex gap-6 ">

@@ -19,14 +19,14 @@ const CustomAccordion = () => {
             {/* Header */}
             <AccordionSummary
               expandIcon={<ChevronDown />}
-              className="bg-white hover:bg-gray-200 transition-all duration-300 px-4 py-2 rounded-sm"
+              className="bg-white hover:bg-gray-200 transition-all duration-300 px-4 py-2"
             >
               <Typography className="!font-medium !text-[20px]">
                 Testler Hakkında
               </Typography>
             </AccordionSummary>
 
-            {/* İçerik */}
+            {/* Content */}
             <AccordionDetails className="px-4 py-2">
               <Typography className="!text-sm">
                 <div className="flex flex-col gap-12">
