@@ -15,7 +15,7 @@ export default function TrainingBanner() {
             <h2 className="text-2xl font-medium text-black">
               Eğitimlerimizi Gördün Mü?
             </h2>
-            <p className="text-gray-500 text-lg">
+            <p className="text-gray-400 text-lg">
               Teknoloji sektöründe en çok kullanılan ücretsiz yazılım
               eğitimlerini takip et, tamamla ve yeteneklerini geliştir!
             </p>

@@ -59,12 +59,12 @@ export default function QuizzesCards() {
               </span>
             </div>
             <div className="flex items-center gap-1 text-[16px]">
-              <span className="flex items-center">
+              <span className="flex items-center gap-1">
                 <TimerIcon /> {test.duration}
               </span>
             </div>
             <div className="flex items-center gap-1 text-[16px]">
-              <span className="flex items-center">
+              <span className="flex items-center gap-1">
                 <QuestionIcon /> {test.questions}
               </span>
             </div>
