@@ -1,3 +1,5 @@
+import { useMediaQuery } from "react-responsive";
+
 import React from "react";
 import TechCareerLogo from "../../assets/svg/techcareerlogo";
 import SearchIcon from "../../assets/svg/searchicon";
@@ -7,11 +9,38 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/600.css";
 import { NavLink } from "react-router";
 function Header() {
-  return (
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
+  return isMobile ? (
+    <header className="flex min-h-[68px] justify-center text-sm transition-all shadow-lg">
+      <div className="flex items-center max-w-[1152px] w-full justify-between px-4 md:px-6">
+        {/* Hamburger Menu */}
+        <button className="flex flex-col space-y-1">
+          <div className="w-6 h-[2px] bg-gray-700"></div>
+          <div className="w-6 h-[2px] bg-gray-700"></div>
+          <div className="w-6 h-[2px] bg-gray-700"></div>
+        </button>
+
+        {/* Logo */}
+        <div className="ml-4">
+          <NavLink to={"/"}>
+            <TechCareerLogo className="cursor-pointer" />
+          </NavLink>
+        </div>
+
+        {/* Search & Button */}
+        <div className="flex items-center gap-4 ml-auto">
+          <SearchIcon className="h-6 fill-zinc-400 cursor-pointer" />
+          <button className="px-4 py-[6px] h-9 rounded-sm bg-giris hover:bg-giris-hover text-white cursor-pointer">
+            Giriş / Üye Ol
+          </button>
+        </div>
+      </div>
+    </header>
+  ) : (
     <header className=" flex min-h-[68px] justify-center text-sm transition-all shadow-lg  ">
       <div className="flex   items-center max-w-[1152px] w-full ">
         <div className="flex items-center ">
-          <NavLink to={"/"} >
+          <NavLink to={"/"}>
             <TechCareerLogo className="cursor-pointer " />
           </NavLink>
         </div>
@@ -22,7 +51,7 @@ function Header() {
                 <input
                   placeholder="Etkinlik, İş İlanı, Blog Ara"
                   className="py-[7px] px-1 min-w-[247px] placeholder:text-[14px] h-9 relative border rounded-sm border-gray-300 placeholder:text-sm placeholder:text-gray-400 pl-12 hover:border-zinc-900 focus:outline-none focus:border-zinc-900
-                   "
+                 "
                 ></input>
 
                 <SearchIcon className="absolute top-[6px] left-4 h-6 fill-zinc-400  " />
@@ -165,3 +194,4 @@ function Header() {
 }
 
 export default Header;
+
