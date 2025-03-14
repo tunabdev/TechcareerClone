@@ -3,7 +3,7 @@ import EmailLogo from "../../assets/svg/isverenmisin/email";
 export default function EmployerContact() {
   return (
     <div className="bg-gray-800">
-      <div className="mx-auto px- flex flex-col gap-4 max-w-[1200px] ">
+      <div className="mx-auto  flex flex-col gap-4 max-w-[1200px] ">
         <div className=" text-white py-8 flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
             <h2 className="text-2xl font-medium">İşveren misin?</h2>

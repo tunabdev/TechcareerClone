@@ -101,22 +101,6 @@ export default function TestGrid() {
       <div className="mx-auto px-6 flex flex-col gap-4 max-w-[1200px] ">
         <div className="py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {tests.map((test, index) => (
-            // <div
-            //   key={index}
-            //   className="border rounded-2xl shadow-lg p-5 flex flex-col items-center text-center bg-white"
-            // >
-            //   <img
-            //     src={test.image}
-            //     alt={test.title}
-            //     className="w-20 h-20 mb-4"
-            //   />
-            //   <h3 className="text-xl font-semibold">{test.title}</h3>
-            //   <p className="text-gray-500">{test.level} Seviye</p>
-            //   <div className="mt-3 flex justify-between w-full text-gray-700">
-            //     <span>{test.duration}</span>
-            //     <span>{test.questions}</span>
-            //   </div>
-            // </div>
             <div
               key={index}
               className="border border-zinc-200 hover:border-zinc-950 rounded-lg p-6 bg-white flex flex-col items-center  
@@ -128,8 +112,12 @@ export default function TestGrid() {
                   alt={test.title}
                   className=" object-contain"
                 />
-                <h3 className="text-lg font-medium">{test.title} ({test.level} Seviye) </h3>
-                <p className="text-sm font-normal text-zinc-950">{test.description}</p>
+                <h3 className="text-lg font-medium">
+                  {test.title} ({test.level} Seviye){" "}
+                </h3>
+                <p className="text-sm font-normal text-zinc-950">
+                  {test.description}
+                </p>
               </div>
 
               {/*  Quizzes Card Footer */}

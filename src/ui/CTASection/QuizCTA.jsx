@@ -19,7 +19,7 @@ const BootcampBanner = () => {
           <div>
             
             <h1 className="text-4xl font-bold">Testler</h1>
-            <p className="mt-4 text-[20px] text-white">
+            <p className="mt-4 text-lg text-white">
               Teknoloji sektörüne özel hazırlanan testler ile teknik
               yetkinliklerinizi anında ölçün. Güçlü yanlarınızı keşfedin ve
               gelişim alanlarınızı belirleyin!
@@ -29,7 +29,7 @@ const BootcampBanner = () => {
                 Ücretsizdir
               </span>
             </div>
-            <button className="mt-6 text-sm bg-giris hover:bg-giris-hover min-w-[172px] text-white font-medium py-3 px-6 rounded-sm ">
+            <button className="mt-6 text-sm cursor-pointer bg-giris hover:bg-giris-hover min-w-[172px] text-white font-medium py-3 px-6 rounded-sm ">
               Keşfet
             </button>
           </div>
